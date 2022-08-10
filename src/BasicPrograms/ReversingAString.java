@@ -7,6 +7,6 @@ public class ReversingAString {
         sb.reverse();
 
         System.out.println(sb);
-        
+
     }
 }

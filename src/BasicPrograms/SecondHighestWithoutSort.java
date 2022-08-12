@@ -6,12 +6,12 @@ public class SecondHighestWithoutSort {
         int highest = array[0];
         int secondHighest = 1;
 
-        for (int i = 0; i < array.length; i++){
-            if (highest < array[i]){
+        for (int j : array) {
+            if (highest < j) {
                 secondHighest = highest;
-                highest = array[i];
-            } else if (secondHighest < array[i] && array[i] != highest) {
-                secondHighest = array[i];
+                highest = j;
+            } else if (secondHighest < j && j != highest) {
+                secondHighest = j;
             }
         }
         System.out.println("Second Highest : " +secondHighest);
